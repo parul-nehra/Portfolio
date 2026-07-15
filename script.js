@@ -86,7 +86,7 @@
   }
 
   /* ---------- typewriter role ---------- */
-  var roles = ["Data Analyst", "Data Visualizer", "CSE Student", "Problem Solver"];
+  var roles = ["Web Developer", "DSA Enthusiast", "Full-Stack Engineer", "Problem Solver"];
   var roleEl = document.getElementById('typedRole');
   if(reduced){
     roleEl.textContent = roles[0];
@@ -106,9 +106,9 @@
     var stage = document.getElementById('orbitStage');
     if(!stage) return;
     var data = [
-      {name:'Python', ring:0}, {name:'SQL', ring:0}, {name:'JavaScript', ring:0}, {name:'HTML', ring:0}, {name:'CSS', ring:0}, {name:'C', ring:0},
-      {name:'Pandas', ring:1}, {name:'NumPy', ring:1}, {name:'Seaborn', ring:1}, {name:'Matplotlib', ring:1}, {name:'React', ring:1},
-      {name:'Tableau', ring:2}, {name:'Power BI', ring:2}, {name:'Looker Studio', ring:2}, {name:'Excel', ring:2}, {name:'Figma', ring:2}, {name:'Jupyter', ring:2}
+      {name:'C++', ring:0}, {name:'Java', ring:0}, {name:'JavaScript', ring:0}, {name:'TypeScript', ring:0}, {name:'Python', ring:0}, {name:'SQL', ring:0}, {name:'HTML', ring:0}, {name:'CSS', ring:0},
+      {name:'React', ring:1}, {name:'Node.js', ring:1}, {name:'Next.js', ring:1}, {name:'Express.js', ring:1}, {name:'Tailwind CSS', ring:1}, {name:'Prisma', ring:1},
+      {name:'Git', ring:2}, {name:'GitHub', ring:2}, {name:'PostgreSQL', ring:2}, {name:'MongoDB', ring:2}, {name:'Docker', ring:2}, {name:'Postman', ring:2}
     ];
     var ringCfg = [
       { rx:130, ry:44, speed:0.28, color:'var(--accent1)' },
