@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Your Name — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">yourname<span class="grad-text">.dev</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="heroSection">
+  <canvas class="hero-canvas" id="heroCanvas"></canvas>
+  <div class="hero-fade"></div>
+  <div class="wrap hero-content">
+    <div class="label">// Portfolio</div>
+    <h1 class="hero-name"><span class="grad-text">Your Name</span></h1>
+    <div class="hero-role"><span id="typedRole"></span><span class="cursor-blink"></span></div>
+    <p class="hero-desc">
+      I design and build reliable backend systems — from API architecture to
+      infrastructure. This is a template: swap in your own copy, photo, and
+      projects. <!-- EDIT ME -->
+    </p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn" href="#contact">Get in touch</a>
+      <a class="btn" href="/resume.pdf">Resume ↓</a>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll<span>↓</span></div>
+</header>
+
+<section id="impact">
+  <div class="wrap reveal3d">
+    <div class="impact-grid reveal-stagger">
+      <div class="stat-card glass spotlight tilt"><div class="stat-num"><span class="count" data-target="5">0</span>+</div><div class="stat-label">Years shipping production code</div></div>
+      <div class="stat-card glass spotlight tilt"><div class="stat-num"><span class="count" data-target="40">0</span>%</div><div class="stat-label">Reduction in on-call incidents</div></div>
+      <div class="stat-card glass spotlight tilt"><div class="stat-num"><span class="count" data-target="300">0</span>ms</div><div class="stat-label">P95 latency after pipeline rebuild</div></div>
+      <div class="stat-card glass spotlight tilt"><div class="stat-num"><span class="count" data-target="200">0</span>+</div><div class="stat-label">GitHub stars across OSS tools</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap reveal3d">
+    <div class="label">About</div>
+    <h2 class="section-title">A little context</h2>
+    <p class="section-sub">Two or three sentences of framing, then the facts a recruiter scans first.</p>
+
+    <div class="about-grid">
+      <div class="about-body">
+        <p>
+          <strong>Replace this with your story.</strong> What you build, what
+          problems you enjoy, and what kind of team you work best on. Keep it
+          to two short paragraphs — this section earns its place by being
+          specific, not by being long.
+        </p>
+        <p>
+          Outside of shipping code you can mention what you're learning right
+          now, an open-source project you maintain, or a talk you gave.
+          Concrete beats general.
+        </p>
+      </div>
+      <ul class="about-facts glass spotlight">
+        <li><span>Currently</span><span>Company Name</span></li>
+        <li><span>Previously</span><span>Previous Co.</span></li>
+        <li><span>Education</span><span>University Name</span></li>
+        <li><span>Open to</span><span>Full-time, contract</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap reveal3d">
+    <div class="label">Stack</div>
+    <h2 class="section-title">Skills, in orbit</h2>
+    <p class="section-sub">Three rings, three categories — languages closest in, infrastructure furthest out.</p>
+
+    <div class="orbit-wrap">
+      <div class="orbit-core" aria-hidden="true"></div>
+      <div class="orbit-stage" id="orbitStage"></div>
+    </div>
+    <div class="orbit-legend">
+      <span><span class="dot" style="background:var(--accent1)"></span>Languages</span>
+      <span><span class="dot" style="background:var(--accent2)"></span>Frameworks</span>
+      <span><span class="dot" style="background:var(--accent3)"></span>Infrastructure</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap reveal3d">
+    <div class="label">Projects</div>
+    <h2 class="section-title">Selected work</h2>
+    <p class="section-sub">Three to five projects — what you built, what changed, and why it mattered.</p>
+
+    <div class="proj-card glass spotlight tilt">
+      <div class="proj-thumb">
+        <!-- EDIT ME: replace with a real screenshot of this project -->
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&q=80&auto=format&fit=crop" alt="Server racks representing backend infrastructure">
+        <span class="proj-tag">Shipped</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">Real-time order pipeline</div>
+        <p class="proj-desc">
+          Rebuilt an order-processing service to stream events instead of
+          polling, cutting p95 latency from 4s to 300ms at 2x current volume.
+        </p>
+        <div class="proj-meta"><span>Go</span><span>Kafka</span><span>PostgreSQL</span></div>
+        <div class="proj-links">
+          <a href="#">Live demo →</a>
+          <a href="#">Source →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card glass spotlight tilt">
+      <div class="proj-thumb">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80&auto=format&fit=crop" alt="Analytics dashboard with charts on screen">
+        <span class="proj-tag">Shipped</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">Self-serve analytics dashboard</div>
+        <p class="proj-desc">
+          Internal tool letting non-engineers build charts against the
+          warehouse without writing SQL. Adopted by 30+ teammates in month one.
+        </p>
+        <div class="proj-meta"><span>TypeScript</span><span>React</span><span>dbt</span></div>
+        <div class="proj-links">
+          <a href="#">Case study →</a>
+          <a href="#">Source →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card glass spotlight tilt">
+      <div class="proj-thumb">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&q=80&auto=format&fit=crop" alt="Code editor open on a laptop">
+        <span class="proj-tag">Shipped</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">Open-source rate limiter</div>
+        <p class="proj-desc">
+          Small, dependency-free sliding-window rate limiter for Node. Used in
+          a handful of production APIs; 200+ stars.
+        </p>
+        <div class="proj-meta"><span>TypeScript</span><span>npm</span></div>
+        <div class="proj-links">
+          <a href="#">npm package →</a>
+          <a href="#">Source →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap reveal3d">
+    <div class="label">History</div>
+    <h2 class="section-title">Experience</h2>
+    <p class="section-sub">Most recent first — each entry is what changed, not just what your title was.</p>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-body glass spotlight tilt">
+          <div class="tl-role">Senior Backend Engineer</div>
+          <div class="tl-meta"><span class="accent">Company Name</span> <span class="dim">· 2023 — Present</span></div>
+          <ul>
+            <li>Led migration of the monolith's payments module into an isolated service, reducing on-call incidents 40%.</li>
+            <li>Mentored two junior engineers; both promoted within a year.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-body glass spotlight tilt">
+          <div class="tl-role">Software Engineer</div>
+          <div class="tl-meta"><span class="accent">Previous Company</span> <span class="dim">· 2021 — 2023</span></div>
+          <ul>
+            <li>Built the initial version of the internal analytics dashboard listed above.</li>
+            <li>Owned the API layer serving three mobile clients.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-body glass spotlight tilt">
+          <div class="tl-role">B.Sc. Computer Science</div>
+          <div class="tl-meta"><span class="accent">University Name</span> <span class="dim">· 2017 — 2021</span></div>
+          <ul>
+            <li>Focus in distributed systems; thesis on consensus protocols.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap reveal3d">
+    <div class="label">Contact</div>
+    <div class="contact-border">
+      <div class="contact-box">
+        <div>
+          <h3>Let's talk</h3>
+          <p>Whatever's fastest for you — email is checked daily.</p>
+        </div>
+        <div class="contact-links">
+          <a class="btn primary" href="mailto:you@example.com">Email</a>
+          <a class="btn" href="https://github.com/yourname">GitHub</a>
+          <a class="btn" href="https://linkedin.com/in/yourname">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Your Name — built with care
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
