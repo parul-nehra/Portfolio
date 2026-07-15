@@ -1,37 +1,52 @@
-# 🌌 Premium Interactive Developer Portfolio Template
+# 🌌 Parul Nehra | Full-Stack Developer, DSA Enthusiast & Data Analyst
 
-An interactive, glassmorphic portfolio template designed for software engineers and developers. Built from scratch using vanilla HTML, CSS, JavaScript, and Three.js for a high-performance, premium, and futuristic presentation.
+Welcome to my portfolio! I am a B.Tech Computer Science student specializing in **Full-Stack Web Development**, **Data Structures & Algorithms (DSA)**, and **Data Analytics**. I love designing scalable web applications, optimizing algorithms, and engineering data pipelines that turn raw information into interactive insights.
 
-![Clean Shot of Portfolio Mockup](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80&auto=format&fit=crop)
-
----
-
-## ✨ Features
-
-- 🌀 **Three.js Interactive Hero Background**: Dynamic, interactive particle stream that reacts to mouse movement.
-- 🔮 **Interactive Skills Orbit**: A custom-built 3D orbit visualization grouped by Languages, Frameworks, and Infrastructure.
-- ⚡ **Micro-Animations & Glow Effects**: Spotlight cursor glow, card tilt effects, glassmorphic styling, and viewport entry animations.
-- 📈 **Dynamic Counter Cards**: Stat trackers that animate as they enter the screen viewport.
-- 📟 **Typewriter Role Display**: Customizable typing terminal effect for engineering roles.
-- 📱 **Fully Responsive**: Fluid layout scaling beautifully from desktop monitors to mobile phones.
-- 🛠️ **No Framework Overhead**: Extremely fast load times and clean code structure.
+🔗 **Live Portfolio**: [https://parul-nehra.github.io/Portfolio](https://parul-nehra.github.io/Portfolio)  
+📧 **Email**: [parul.2024@nst.rishihood.edu.in](mailto:parul.2024@nst.rishihood.edu.in)
 
 ---
 
-## 🛠️ Tech Stack
+## 📈 Key Highlights
 
-- **Core**: HTML5, Vanilla JavaScript (ES6)
-- **Styling**: Vanilla CSS3 (Custom Variables, Flexbox, Grid, keyframe animations)
-- **3D Graphics**: [Three.js](https://threejs.org/) (loaded via CDN)
-- **Fonts**: [Google Fonts](https://fonts.google.com/) (Space Grotesk, Orbitron, Inter, IBM Plex Mono)
+- 🧩 **500+** Data Structures & Algorithms (DSA) problems solved.
+- 💻 **5+** Full-Stack Web projects built and deployed.
+- 📊 **300k+** Transaction records processed and analyzed in ETl pipelines.
+- 🎓 B.Tech Computer Science student at **Newton School of Technology** (2024 - 2028).
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Featured Projects
 
-Since this project is built entirely on vanilla web technologies, starting it is simple and lightweight.
+### 1. 🏥 [WellTrackAI: AI Health Tracker](https://github.com/parul-nehra/WellTrackAI)
+*A comprehensive health and wellness tracking app providing daily activity metrics and AI-generated wellness insights.*
+- **Tech Stack**: Next.js, React, Tailwind CSS, Node.js, Express, PostgreSQL, Prisma, Google Gemini AI API.
+- **Key Features**: Secure user authentication, paginated goals/activity dashboard, interactive progress charts, and personalized AI coaching insights.
 
-### Run Locally
+### 2. 💳 [SolUPI: Fiat-to-Crypto UPI Bridge](https://github.com/parul-nehra/SolUPI-V2)
+*A decentralized gateway enabling seamless, non-custodial purchase of Solana USDC using India's UPI network.*
+- **Tech Stack**: Next.js, Solana Web3.js, Node.js, TypeScript, PostgreSQL, Prisma, Express.
+- **Key Features**: Instantly generated payment QR codes, automated bank email verification via IMAP receipt parsing (preventing double-spend), and 13 enterprise OOP design patterns.
+
+### 3. 📉 [Retail Transaction ETL Pipeline](https://github.com/parul-nehra/SectionB_G3_RetailAnalytics)
+*An end-to-end data processing pipeline converting raw transactions into executive business intelligence.*
+- **Tech Stack**: Python, SQL, Pandas, NumPy, Jupyter, Tableau.
+- **Key Features**: Cleaned and transformed 300k+ raw records, implemented statistical analysis, and designed interactive Tableau dashboards for revenue and operational analytics.
+
+---
+
+## 🛠️ Technical Skills
+
+- **Languages**: C++, Java, Python, SQL, JavaScript, TypeScript, HTML5, CSS3
+- **Frameworks & Libraries**: React, Next.js, Node.js, Express.js, Pandas, NumPy, Tailwind CSS
+- **Databases & ORMs**: PostgreSQL, MongoDB, Prisma, MySQL
+- **Tools & Platforms**: Git, GitHub, Docker, Postman, Tableau, Power BI, Excel, Figma
+
+---
+
+## 📂 Local Setup (For the Portfolio Website)
+
+To run this portfolio website locally:
 
 1. **Clone the repository:**
    ```bash
@@ -39,38 +54,8 @@ Since this project is built entirely on vanilla web technologies, starting it is
    cd Portfolio
    ```
 
-2. **Run a local server:**
-   You can open `index.html` directly in the browser, but it is recommended to run a lightweight local web server to prevent CORS issues (specifically when loading custom local fonts, icons, or assets):
-
-   * **Python:**
-     ```bash
-     python3 -m http.server 8000
-     ```
-   * **Node.js (using `npx`):**
-     ```bash
-     npx serve
-     ```
-   * **VS Code:** Use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.
-
----
-
-## ⚙️ Customization Guide
-
-### 1. Personalize Information
-Open [index.html](file:///Users/parul/Downloads/Portfolio/index.html) and search for the `<!-- EDIT ME -->` tags. Customize the name, description, professional experience, projects, and contact links.
-
-### 2. Update Skills & Orbit
-Open [script.js](file:///Users/parul/Downloads/Portfolio/script.js) to modify the skills list. The script automatically populates the 3D orbital rings based on the skills array:
-* Language skills
-* Framework skills
-* Infrastructure skills
-
----
-
-## 🌎 Deployment
-
-You can deploy this site in seconds on any static hosting provider:
-
-* **GitHub Pages**: Go to `Settings -> Pages` in this repository, select `main` branch as the source, and save.
-* **Vercel**: Install Vercel CLI and run `vercel` in the root folder.
-* **Netlify**: Drag and drop the repository folder directly into the Netlify dashboard.
+2. **Start a local server:**
+   ```bash
+   python3 -m http.server 8000
+   ```
+   Now open `http://localhost:8000` in your web browser.
