@@ -254,25 +254,7 @@
   @media (max-width:640px){ .orbit-wrap{ height:300px; } }
 
   /* ---------- projects ---------- */
-  .proj-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-top: 32px;
-  }
-  @media (max-width: 900px) {
-    .proj-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 600px) {
-    .proj-grid { grid-template-columns: 1fr; }
-  }
-
-  .proj-card{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin-bottom: 0;
-  }
+  .proj-card{ margin-bottom:26px; }
   .proj-thumb{ position:relative; aspect-ratio:16/9; overflow:hidden; border-radius:14px 14px 0 0; }
   .proj-thumb img{
     width:100%; height:100%; object-fit:cover; display:block; filter:saturate(0.9) brightness(0.85);
@@ -287,12 +269,7 @@
     font-family:var(--font-mono); font-size:0.68rem; color:var(--green); text-transform:uppercase; letter-spacing:0.05em;
     background:rgba(12,14,22,0.75); border:1px solid var(--green); padding:4px 10px; border-radius:20px; backdrop-filter:blur(6px);
   }
-  .proj-body{
-    padding:24px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-  }
+  .proj-body{ padding:24px; }
   .proj-title{ font-family:var(--font-display); font-size:1.25rem; font-weight:600; margin-bottom:10px; }
   .proj-desc{ color:var(--text-dim); font-size:0.96rem; margin-bottom:18px; }
   .proj-meta{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px; }
@@ -300,17 +277,7 @@
     font-family:var(--font-mono); font-size:0.74rem; color:var(--text-dim); border:1px solid var(--border);
     padding:4px 10px; border-radius:20px;
   }
-  .proj-links{ display:flex; gap:22px; font-family:var(--font-mono); font-size:0.82rem; margin-top: auto; }
-  .proj-links a {
-    color: var(--accent1);
-    transition: color 0.3s ease, transform 0.3s ease;
-    display: inline-block;
-  }
-  .proj-links a:hover {
-    color: var(--text);
-    transform: translateX(4px);
-    text-decoration: none;
-  }
+  .proj-links{ display:flex; gap:22px; font-family:var(--font-mono); font-size:0.82rem; }
 
   /* ---------- experience ---------- */
   .timeline{ position:relative; padding-left:30px; }
